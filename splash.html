@@ -75,7 +75,6 @@
         // JavaScript for managing splash screen and content
         window.onload = () => {
             const splashScreen = document.getElementById("splashScreen");
-            const mainContent = document.getElementById("mainContent");
 
             // Delay to show splash screen for 2 seconds
             setTimeout(() => {
@@ -85,12 +84,10 @@
 
                 // Once splash fades, hide it and show main content
                 setTimeout(() => {
-                    splashScreen.style.display = "none";
-                    mainContent.style.display = "block";
+                    window.location.href = "home.html";
                 }, 1000); // Wait for fade-out transition
             }, 2000); // Show splash screen for 2 seconds
         };
     </script>
-    <p>wowww</p>
 </body>
 </html>
