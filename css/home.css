@@ -69,8 +69,14 @@ nav ul li a {
 }
 
 @media screen and (max-width:867px){
+    body {
+        padding-top: 0px;
+    }
     .hamburger {
         display: flex; /* Show hamburger menu on mobile */
+    }
+    nav{
+        padding: 0px 10px;
     }
     nav ul {
         display: none; 
