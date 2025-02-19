@@ -42,7 +42,7 @@ nav {
 nav ul {
     border-radius: 25px;
     overflow: hidden;
-    background-color: rgba(255, 255, 255, 0.06);
+    background-color: rgba(136, 123, 123, 0.397);
     backdrop-filter: blur(16px);
     box-shadow: 0 25px 23px rgba(0, 0, 0, 0.15);
     border: 1px solid rgb(255, 255, 255);
@@ -121,7 +121,7 @@ a {
         top: 100px; 
         left: 25%;
         right: 20%;
-        background-color: rgba(155, 130, 130, 0.9); 
+        background-color: rgba(165, 151, 151, 0.644); 
         border-radius: 10px; 
         padding: 10px;
     }
