@@ -1,0 +1,147 @@
+body {
+    padding-top: 110px;
+    background-color: rgb(114, 143, 111);
+    cursor: url('../images/pointer.png'), auto;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'M PLUS 1p', sans-serif;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 3%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.logo {
+    width: 90px;
+    height: 50px;
+    background-color: #ccc; 
+    border-radius: 0px 54px 54px 54px; 
+}
+.profileimg {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+.logo, .profileimg {
+    overflow: hidden;
+}
+.logo img, .profileimg img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+}
+nav ul {
+    border-radius: 25px;
+    overflow: hidden;
+    background-color: rgba(136, 123, 123, 0.397);
+    backdrop-filter: blur(16px);
+    box-shadow: 0 25px 23px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgb(255, 255, 255);
+    padding: 5px 20px;
+    list-style: none; 
+    display: flex; 
+    gap: 44px; 
+}
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+a {
+    cursor: url('../images/pointer.png'), auto;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 21px;
+}
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 40px;
+    height: 30px;
+    cursor: pointer;
+}
+.bar {
+    width: 100%;
+    height: 5px;
+    background-color: black;
+    border-radius: 50px;
+}
+
+.hero-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw; 
+    height: 100vh;
+    z-index: -1; 
+}
+
+.above-video-text {
+    position: absolute;
+    top: 25%; 
+    left: 50%;
+    transform: translateX(-50%);
+    color: white; 
+    font-size: 110px;
+    z-index: 10; 
+}
+
+.hero-video video {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+    border-radius: 0; 
+}
+@media screen and (max-width:1135px){
+    body {
+        padding-top: 110px;
+    }
+    .hamburger {
+        display: flex; 
+    }
+    nav{
+        padding: 0px 10px;
+    }
+    nav ul {
+        display: none; 
+        flex-direction: column; 
+        position: absolute;
+        top: 100px; 
+        left: 25%;
+        right: 20%;
+        background-color: rgba(165, 151, 151, 0.644); 
+        border-radius: 10px; 
+        padding: 10px;
+    }
+
+    nav ul.active {
+        display: flex; 
+    }
+
+    nav ul li {
+        text-align: center; 
+        padding: 15px 0; 
+    }
+    .above-video-text {
+        position: absolute;
+        top:25%;/* Adjust this value to position the text */
+        left: 50%;
+        transform: translateX(-50%);
+        color: white; 
+        font-size: 60px;
+        z-index: 10; 
+    }
+    
+}

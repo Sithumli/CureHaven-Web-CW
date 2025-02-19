@@ -1,22 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>CW</title>
-        <style rel="stylesheet" href="styles.css"></style>
-    </head>
-    <body>
-        <header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CW</title>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
             <nav>
                 <ul>
-                    <li>HOME</li>
-                    <li>TEAM</li>
-                    <li>VOLUNTEER</li>
-                    <li>SITEMAP</li>
-                    <li>FEEDBACK</li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
                 </ul>
+                <a href="profile.html"><div class="profileimg"><img src="images/profile.png" alt="profile"></div></a>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <div class="bar" style="width: 70%;"></div>
+                    <div class="bar"></div>
+                    <div class="bar" style="width: 50%;"></div>
+                </div>
             </nav>
-        </header>
-    </body>
+        </div>
+    </header>
+    <main>
+        <div class="hero-video">
+            <h1 class="above-video-text">YOUR HEALTH<br>OUR GOAL</h1>
+            <video autoplay loop muted>
+                <source src="images/hero.mp4" type="video/mp4">
+            </video>            
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
 </html>
