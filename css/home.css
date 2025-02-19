@@ -1,5 +1,5 @@
 body {
-    padding-top: 80px; 
+    padding-top: 100px; 
 }
 * {
     padding: 0;
@@ -17,7 +17,6 @@ nav {
     left: 0;
     width: 100%;
     z-index: 1000;
-    background-color: rgba(255, 255, 255, 0.9);
 }
 .logo {
     width: 90px;
