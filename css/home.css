@@ -38,10 +38,10 @@ nav {
     object-fit: cover; 
 }
 nav ul {
-    border-radius: 54px;
+    border-radius: 25px;
     overflow: hidden;
     background-color: rgba(104, 98, 98, 0.5);
-    padding: 10px 20px;
+    padding: 5px 20px;
     list-style: none; 
     display: flex; 
     gap: 44px; 
