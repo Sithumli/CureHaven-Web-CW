@@ -35,7 +35,7 @@ nav {
 nav ul {
     border-radius: 54px;
     overflow: hidden;
-    background-color: rgba(155, 130, 130, 0.6);
+    background-color: rgba(104, 98, 98, 0.5);
     padding: 10px 20px;
     list-style: none; 
     display: flex; 
@@ -68,12 +68,12 @@ nav ul li a {
     border-radius: 50px;
 }
 
-@media screen and (max-width:867px){
+@media screen and (max-width:1135px){
     body {
         padding-top: 0px;
     }
     .hamburger {
-        display: flex; /* Show hamburger menu on mobile */
+        display: flex; 
     }
     nav{
         padding: 0px 10px;
