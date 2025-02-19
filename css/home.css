@@ -1,5 +1,5 @@
 body {
-    padding-top: 8px;
+    padding-top: 80px; 
 }
 * {
     padding: 0;
@@ -12,6 +12,12 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 10px 3%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.9);
 }
 .logo {
     width: 90px;
@@ -70,7 +76,7 @@ nav ul li a {
 
 @media screen and (max-width:1135px){
     body {
-        padding-top: 0px;
+        padding-top: 80px;
     }
     .hamburger {
         display: flex; 
