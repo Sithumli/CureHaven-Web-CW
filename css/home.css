@@ -1,26 +1,25 @@
 body {
-    padding-top: 20px;
+    padding-top: 8px;
 }
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'M PLUS 1p', sans-serif;
 }
-nav{
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 5%;
-    padding-right: 5% ;
+    padding: 10px 3%;
 }
-.logo{
+.logo {
     width: 90px;
     height: 50px;
     background-color: #ccc; 
     border-radius: 0px 54px 54px 54px; 
 }
-.profileimg{
+.profileimg {
     width: 90px;
     height: 90px;
     border-radius: 50%;
@@ -33,17 +32,6 @@ nav{
     height: 100%; 
     object-fit: cover; 
 }
-nav ul li{
-    list-style-type: none;
-    display: inline-block;
-    padding: 10px 20px;
-}
-nav ul li a{
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    font-size: 21px;
-}
 nav ul {
     border-radius: 54px;
     overflow: hidden;
@@ -52,4 +40,55 @@ nav ul {
     list-style: none; 
     display: flex; 
     gap: 44px; 
+}
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 21px;
+}
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40px;
+    height: 30px;
+    cursor: pointer;
+}
+.bar {
+    width: 100%;
+    height: 5px;
+    background-color: black;
+    border-radius: 50px;
+}
+
+@media screen and (max-width:867px){
+    .hamburger {
+        display: flex; /* Show hamburger menu on mobile */
+    }
+    nav ul {
+        display: none; 
+        flex-direction: column; 
+        position: absolute;
+        top: 100px; 
+        left: 25%;
+        right: 25%;
+        background-color: rgba(155, 130, 130, 0.9); 
+        border-radius: 10px; 
+        padding: 10px;
+    }
+
+    nav ul.active {
+        display: flex; 
+    }
+
+    nav ul li {
+        text-align: center; 
+        padding: 15px 0; 
+    }
 }
