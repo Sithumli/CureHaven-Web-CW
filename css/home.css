@@ -1,6 +1,6 @@
 body {
     padding-top: 0;
-    background-color: rgb(77 87 76 / 95%);
+    background-color: rgba(150, 136, 136, 0.493);
     cursor: url('../images/pointer.png'), auto;
 }
 * {
@@ -97,7 +97,7 @@ a {
 
 .above-video-text {
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
@@ -105,10 +105,58 @@ a {
     text-align: center;
     z-index: 2;
 }
+.explorebtn {
+    position: absolute;
+    top: 80%;
+    left: 80%; 
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 15px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    transition: 0.3s ease-in-out;
+}
 
+.explorebtn:hover {
+    background-color: white;
+    transform: translateY(-50%) scale(1.1);
+}
+.volunteerbtn {
+    position: absolute;
+    top: 80%;
+    right: 80%; 
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 15px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    transition: 0.3s ease-in-out;
+}
+
+.volunteerbtn:hover {
+    background-color: white;
+    transform: translateY(-50%) scale(1.1);
+}
 main {
     position: relative;
     padding-top: 110px;
+}
+
+main h1{
+    text-align: center;
+    margin-top: 20px;
 }
 @media screen and (max-width:1135px){
     body {
