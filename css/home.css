@@ -57,7 +57,6 @@ nav ul li {
     padding: 10px 20px;
 }
 a {
-    cursor: url('../images/pointer.png'), auto;
     text-decoration: none;
     color: black;
     font-weight: bold;
