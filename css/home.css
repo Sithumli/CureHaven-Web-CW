@@ -1,6 +1,6 @@
 body {
-    padding-top: 110px;
-    background-color: rgb(114, 143, 111);
+    padding-top: 0;
+    background-color: rgb(77 87 76 / 95%);
     cursor: url('../images/pointer.png'), auto;
 }
 * {
@@ -60,7 +60,7 @@ a {
     text-decoration: none;
     color: black;
     font-weight: bold;
-    font-size: 21px;
+    font-size: 19px;
 }
 .hamburger {
     display: none;
@@ -79,33 +79,40 @@ a {
 }
 
 .hero-video {
-    position: fixed;
+    margin-top: -110px;
+    position: relative;
+    width: 100%;
+    height: 100vh; 
+    overflow: hidden;
+}
+
+.hero-video video {
+    position: absolute;
     top: 0;
     left: 0;
-    width: 100vw; 
-    height: 100vh;
-    z-index: -1; 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .above-video-text {
     position: absolute;
-    top: 25%; 
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
-    color: white; 
-    font-size: 110px;
-    z-index: 10; 
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 80px;
+    text-align: center;
+    z-index: 2;
 }
 
-.hero-video video {
-    width: 100%;
-    height: 100%; 
-    object-fit: cover; 
-    border-radius: 0; 
+main {
+    position: relative;
+    padding-top: 110px;
 }
 @media screen and (max-width:1135px){
     body {
-        padding-top: 110px;
+        padding-top:-110px;
     }
     .hamburger {
         display: flex; 
