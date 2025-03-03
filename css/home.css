@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Momentum&display=swap');
+
 body {
     padding-top: 0;
     background-color: rgba(150, 136, 136, 0.493);
@@ -21,14 +23,12 @@ nav {
     z-index: 1000;
 }
 .logo {
-    width: 100px;
-    height: 75px;
-    background-color: #ebe0e060; 
-    border-radius: 0px 54px 54px 54px; 
+    width: 125px;
+    height: 125px;
 }
 .logo img{
-    width: 100px;
-    height: 100px;
+    width: 125px;
+    height: 125px;
 }
 .profileimg {
     width: 100px;
@@ -249,17 +249,22 @@ main h1{
 }
 .footer-box{
     margin-top: 20px;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     border-radius: 20px 20px 0 0;
     justify-content: space-between;
-    padding: 50px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    padding-left: 160px;
+    padding-right: 160px;
     display: flex;
 }
-.footerlinks ul{
+.footerlinks ul,
+.contentlinks ul,
+.socials ul,
+.PageEditorlinks ul{
     list-style-type: none;
 }
 .socials ul{
-    list-style-type: none;
     gap: 20px;
     display: flex;
 }
@@ -267,17 +272,50 @@ main h1{
     width: 32px;
     height: 32px;
 }
-.contentlinks ul{
-    list-style-type: none;
-}
 .contentlinks ul li a{
+    font-weight:lighter;
+    font-family: 'Momentum',sans-serif;
     color: aliceblue;
+}
+.footerlinks ul li,
+.contentlinks ul li,
+.PageEditorlinks ul li{
+    margin-bottom: 6px;
 }
 .footerlinks ul li a{
+    font-weight:lighter;
+    font-family: 'Momentum',sans-serif;
+    color: aliceblue;
+    padding-bottom: 20px;
+}
+.PageEditorlinks ul li a{
+    font-weight:lighter;
+    font-family: 'Momentum',sans-serif;
+    color: aliceblue;
+    padding-bottom: 20px;
+}
+.copyright{
+    border-top: 0.01px solid rgb(100, 93, 93);
+    background-color: black;
     color: aliceblue;
 }
-
-
+.copyright p{
+    font-family: 'Momentum', sans-serif;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footerlinks .head,
+.contentlinks .head,
+.PageEditorlinks .head{
+    color: rgb(165, 164, 163);
+    font-weight:bolder;
+    font-family: 'Momentum',sans-serif;
+    font-size: 23px;
+    padding-bottom: 5px;
+}
 @media screen and (max-width:1135px){
     body {
         padding-top:-110px;
@@ -316,6 +354,40 @@ main h1{
         color: white; 
         font-size: 60px;
         z-index: 10; 
+    }
+    .explorebtn {
+        position: absolute;
+        top: 80%;
+        left: 80%; 
+        transform: translateY(-50%);
+        background-color: rgba(255, 255, 255, 0.8);
+        color: black;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 15px 30px;
+        border-radius: 50px;
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+        transition: 0.3s ease-in-out;
+    }
+    .volunteerbtn {
+        position: absolute;
+        top: 80%;
+        right: 80%; 
+        transform: translateY(-50%);
+        background-color: rgba(255, 255, 255, 0.8);
+        color: black;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 15px 30px;
+        border-radius: 50px;
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+        transition: 0.3s ease-in-out;
     }
     
 }
