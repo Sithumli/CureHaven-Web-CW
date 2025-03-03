@@ -473,15 +473,27 @@ body {
 
 @media screen and (max-width:1135px){
     .explore {
-        padding: 110px 10px;
+        padding: 120px 100px;
         font-size: 16px;
     }
 
     .explore img {
         width: 200px;
         height: 200px;
-        right: 10px;
+        right: 100px;
         top: 100px;
+    }
+
+    #explore-button {
+        margin-top: 20px;
+        background-color: black;
+        width: 150px;
+        height: 50px;
+        border-radius: 10px;
+        color: white;
+        font-size:medium;
+        border: none;
+        cursor: pointer;
     }
 
     #volunteer-banners .program1,
