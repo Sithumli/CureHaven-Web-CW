@@ -397,7 +397,7 @@ main h1{
         padding-top: 50px;
         padding-bottom: 30px;
         padding-left: 50px;
-        padding-right: 50px;
+        padding-right: 40px;
         display: flex;
     }
     .footerlinks ul,
@@ -465,5 +465,19 @@ main h1{
         font-family: 'Momentum',sans-serif;
         font-size: 20px;
         padding-bottom: 5px;
+    }
+}
+@media screen and (max-width: 771px) {
+    .explorebtn {
+        font-size: 12px;
+        left: 70%;
+        transform: translateX(-50%);
+        top: 70%;
+    }
+    .volunteerbtn {
+        font-size: 12px;
+        right: 50%;
+        transform: translateX(-50%);
+        top: 70%;
     }
 }
