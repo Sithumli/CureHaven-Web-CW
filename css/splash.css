@@ -4,9 +4,10 @@ body, html {
     height: 100%;
     overflow: hidden;
     font-family: 'Arial', sans-serif;
-    background-image: url('background.jpeg');
-    background-size: 850px;
+    background-image: url('../images/background.jpg');
+    background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     color: white;
     text-align: center;
 }
@@ -77,6 +78,7 @@ body, html {
 }
 
 .loading-percentage {
+    top: 15px;
     display: inline-block;
     margin-left: 10px; 
     font-size: 1.2em;
