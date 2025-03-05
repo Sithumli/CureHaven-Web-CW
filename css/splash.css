@@ -1,0 +1,88 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Arial', sans-serif;
+    background-image: url('background.jpeg');
+    background-size: 850px;
+    background-position: center;
+    color: white;
+    text-align: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.splash-content {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logo {
+    width: 400px;
+    height: auto;
+    position: relative;
+    top: 80px;
+    margin-bottom: 10px; 
+}
+
+.splash-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.splash-content p {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+}
+
+.splash-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.splash-content ul li {
+    font-size: 1.2em;
+}
+
+.progress-container {
+    width: 280px;
+    height: 30px;
+    background-color: #ddd; 
+    border-radius: 15px;
+    position: relative;
+    top: 30px;
+    left: -1%; 
+    overflow: visible; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+    display: inline-block; 
+}
+
+.progress-bar {
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(90deg, rgb(220, 217, 219), rgba(224, 203, 215, 0.8)); 
+    border-radius: 50px 50px 50px 50px; 
+    box-shadow: inset 0 0 10px rgba(144, 127, 137, 0.6);
+    transition: width 0.1s linear;
+}
+
+.loading-percentage {
+    display: inline-block;
+    margin-left: 10px; 
+    font-size: 1.2em;
+    color: white; 
+    vertical-align: middle; 
+    position: relative; 
+    left: 5px; 
+    z-index: 1; 
+}
