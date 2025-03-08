@@ -13,7 +13,7 @@
         <div class="splash-content">
             <img src="images/logo.png" alt="Team Logo" class="logo">
             <h1>CureHaven</h1>
-            <p>Empowering healthier lives through care.<br> <br> Team members:</p>
+            <p>Empowering healthier lives through care<br> <br> Team members</p>
             <ul>
                 <li>Sithumli Nanayakkara</li>
                 <li>Sanuthmee Nisandima</li>
@@ -26,6 +26,33 @@
             </div>
         </div>
     </div>
-    <script src="index.js"></script>
+
+
+    <script>
+        window.onload = () => {
+            const progressBar = document.querySelector('.progress-bar');
+            const loadingPercentage = document.querySelector('.loading-percentage');
+
+            console.log(progressBar, loadingPercentage); // Debugging logs
+
+            if (!progressBar || !loadingPercentage) {
+                console.error("Elements not found!");
+                return;
+            }
+
+            let percentage = 0;
+            const interval = setInterval(() => {
+                percentage += 1; 
+                loadingPercentage.textContent = `${percentage}%`; 
+                progressBar.style.width = `${percentage}%`; 
+
+                console.log(loadingPercentage.textContent); 
+
+                if (percentage >= 100) {
+                    clearInterval(interval); 
+                }
+            }, 30);
+        };
+    </script>
 </body>
 </html>
