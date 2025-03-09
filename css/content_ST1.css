@@ -1,3 +1,14 @@
+.iframe-container {
+    display: flex;
+    margin-top: 50px;
+    justify-content: center; 
+    align-items: center;    
+    height: 100vh;          
+}
+iframe {
+    border: none; 
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -204,21 +215,21 @@ header p {
 }
 
 #beginner-box {
-    background-image: url('images/beginner_workouts.jpg');
+    background-image: url('../images/');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 #gym-box {
-    background-image: url('images//gym_routine.jpg');
+    background-image: url('../images/gym_routine.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 #yoga-box {
-    background-image: url('images/flexibility.jpg');
+    background-image: url('../images/flexibility.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

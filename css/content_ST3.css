@@ -1,0 +1,149 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #9688887e;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+}
+
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+
+}
+
+#bg-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; 
+}
+
+h1 {
+    position: relative;
+    font-size: 120px;
+    font-weight: bold;
+    z-index: 1;
+    color: transparent;
+    -webkit-text-stroke: 3px white;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+
+
+.second-nav {
+    background: linear-gradient(125deg, #2d2d2d, #1a1a1a);
+    overflow: hidden;
+    border-radius: 5px;
+    color: #f1f1f1;
+    display: flex;
+    justify-content:space-between; /* Aligns items to the right */
+    width: 86.2%; /* Starts from the middle */
+    margin-left: auto; /* Pushes it to the right half */
+}
+  
+.second-nav a {
+    color: #ffffff;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.second-nav a:hover {
+    background-color: #555555;
+}
+
+
+
+#goToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+#goToTopBtn:hover {
+    background-color: #0056b3;
+}
+
+
+body {
+    height: 2000px;
+}
+
+body:has(:hover) #goToTopBtn {
+    display: block;
+}
+
+
+section {
+    margin: 40px;
+    padding: 40px;
+    background-color: #555555;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0);
+    text-align: justify;
+    margin-left: 14%;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+section:hover {
+    transform: scale(1.05);
+}
+
+h2 {
+    color: #000000;
+    text-align: left;
+}
+
+.image-container img {
+    width: 350px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+.image-container {
+    float: left;
+    margin-right: 20px;
+}
+
+
+.text-container {
+    overflow: hidden;
+}
