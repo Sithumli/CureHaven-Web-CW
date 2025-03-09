@@ -76,7 +76,6 @@ body {
     border-radius: 50%;
     z-index: -1; 
     overflow: hidden;
-    filter: blur(9px); 
   }
   
   

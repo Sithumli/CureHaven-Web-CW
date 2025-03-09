@@ -1,0 +1,242 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+header {
+    background-color: rgb(246, 246, 246);
+    color: rgb(9, 9, 9);
+    padding: 430px;
+    text-align:left;
+    position: relative;
+    bottom: 250px;
+    height: 200px;
+    padding-left: 350px;
+}
+
+header img {
+    width: 400px;
+    height: 400px;
+    position:relative;
+    left: 550px;
+    bottom: 190px;
+}
+header p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    position: relative;
+    bottom: 380px;
+}
+.cta-button {
+    background-color: #8c8c8c;
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    position: relative;
+    bottom: 370px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    margin-top: 20px;
+    display: inline-block;
+}
+.cta-button:hover {
+    background-color: #5b5c5b;
+}
+.section {
+    margin: 20px 0;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 150px;
+    height: 150px;
+}
+
+.info-cards {
+    display: flex;
+    justify-content: space-around;
+    background-color: #d3d3d3;
+    position: relative;
+    bottom: 240px;
+    padding: 20px;
+    width: 1300px;
+    height: 300px;
+}
+
+.card {
+    background-color: white;
+    padding: 15px;
+    text-align: center;
+    width: 30%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    width:fit-content;
+    margin-top: 30px;
+    position: relative;
+    left: 280px;
+    bottom: 180px;
+}
+.grid-item {
+    background-color: #dfdfdf;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.grid-item:hover {
+    background-color: #b0b0b0;
+    transform: scale(1.05);
+}
+
+.grid-item img {
+    width: 140px;
+    height: 130px;
+    position: relative;
+    top: 10px;
+    right: 10px;
+}
+
+.grid-item p {
+    position: relative;
+    top: 80px;
+}
+
+.exercise-routines {
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.exercise-options {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    position: relative;
+    top: 180px;
+    height: 400px;
+    width: 80px;
+    left: 180px;
+}
+
+.exercise-routines-section {
+    width: 100%;
+    height: 800px;
+    background-color: rgb(237, 235, 235);;
+}
+
+.exercise-routine-container {
+    position: relative;
+    top: 40px;
+    left: 100px;
+    width: 500px;
+    font-size: larger;
+}
+
+.description {
+    position: relative;
+    top: 40px;
+}
+
+
+.exercise-category {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 150px;
+    height: 100%;
+    
+}
+
+.exercise-category button {
+    background-color: #8c8c8c;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 200px;
+    height: 120px;
+    font-size:larger;
+}
+
+.exercise-category button:hover {
+    background-color: #5b5c5b;
+}
+
+.exercise-description {
+    display: flex;
+    gap: 20px;
+}
+
+.exercise-box {
+    display: none;
+    background-color: #dfdfdf;
+    padding: 20px;
+    border-radius: 8px;
+    width: 500px;
+    height: 500px;
+    text-align: center;
+    position: relative;
+    left: 100px;
+    text-align: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+#beginner-box {
+    background-image: url('images/beginner_workouts.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#gym-box {
+    background-image: url('images//gym_routine.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#yoga-box {
+    background-image: url('images/flexibility.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.exercise-box p {
+    position: relative;
+    top: 350px;
+    color: white;
+    font-size: larger;
+    font-family:system-ui;
+}
+
+.exercise-box:target {
+    display: block;
+}
+
+.exercise-box:first-of-type {
+    display: block;
+}
