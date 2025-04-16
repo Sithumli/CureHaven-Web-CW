@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("../images/forest.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-attachment: fixed;
+    backdrop-filter: blur(2px);
+    transition: 0.5s ease-in-out;
+}
+
+.topic {
+    font-size: 40px;
+    font-family: 'Neue Montreal', sans-serif;
+    text-align: center;
+}
+
+header {
+    text-align: center;
+    position: relative;
+}
+
+.memo {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+.dark-mode-toggle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+.mood{
+    margin-top: 60px;
+}
+.mood2{
+    margin-top: 200px;
+}
+.breathing-exercise{
+    margin-bottom: 60px;
+}
+.mood, .mood2, .breathing-exercise {
+    font-family: 'Neue Montreal', sans-serif;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    background-color: rgba(219, 219, 215, 0.7);
+    border: 1px solid white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #333;
+    flex-direction: column;
+    text-align: center;
+}
+
+.mood_buttons {
+    display: flex;
+    gap: 30px;
+}
+
+.mood_buttons button {
+    border-radius: 50%;
+    border: none;
+    background: transparent;
+}
+
+.mood_buttons button img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.mood_buttons button:hover {
+    transform: scale(1.2);
+}
+
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    max-width: 400px;
+    margin: auto;
+}
+
+.session {
+    background-color: #ffffffb6;
+    border: 2px solid #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.session:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.selected {
+    background-color: #36bd55f5 !important;
+    color: white;
+}
+
+.vr-btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.vr-btn:hover {
+    background-color: #0056b3;
+}
+
+.breathing-exercise {
+    margin-top: 40px;
+}
+
+.breathing-exercise button {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+}

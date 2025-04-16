@@ -316,7 +316,54 @@ main h1{
     font-size: 23px;
     padding-bottom: 5px;
 }
+.contentsall {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: -300px; /* Adjust this if needed */
+}
 
+/* Common styles for all boxes */
+.content1, .content2, .content3, .content4 {
+    width: 250px;
+    height: 250px;
+    background-color: rgb(165, 164, 163);
+    margin: 10px;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+    overflow: hidden; /* Ensures content doesn't overflow */
+    position: relative; /* For positioning text */
+}
+
+/* Hover effect */
+.content1:hover, .content2:hover, .content3:hover, .content4:hover {
+    transform: scale(1.2);
+}
+
+/* Image styling */
+.content1 img, .content2 img, .content3 img, .content4 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container */
+    border-radius: 20px; /* Matches the container's border radius */
+}
+
+/* Text styling */
+.content1 .text, .content2 .text, .content3 .text, .content4 .text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    border-bottom-left-radius: 20px; /* Matches the container's border radius */
+    border-bottom-right-radius: 20px;
+}
 @media screen and (max-width:1135px){
     body {
         padding-top:-110px;

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CureHaven</title>
+  <link rel="stylesheet" href="css/content_ST2.css">
+</head>
+<body>
+  <header>
+    <h1 class="topic">SoulSpace</h1>
+    <p class="memo"><i>Nurture Your Mind, Elevate Your Spirit</i></p>
+    <button class="dark-mode-toggle" onclick="toggleDarkMode()">🌙</button>
+  </header>
+
+  <div class="mood">
+    <p>How are you feeling today?</p>
+    <div class="mood_buttons">
+      <button onclick="showMessage('Very good to hear! 😊')"><img src="images/happy.png"></button>
+      <button onclick="showMessage('Let’s fix that up! 💙')"><img src="images/sad.png"></button>
+      <button onclick="showMessage('Stay balanced and mindful! 🌿')"><img src="images/nut.png"></button>
+      <button onclick="showMessage('Take a deep breath! 😤')"><img src="images/angry.png"></button>
+    </div>
+  </div>
+
+  <div class="mood2">
+    <h2>Daily Meditation Session Calendar</h2>
+    <p>Select a session:</p>
+
+    <div class="calendar">
+      <div class="session" onclick="selectSession(this)">8:00 AM</div>
+      <div class="session" onclick="selectSession(this)">9:00 AM</div>
+      <div class="session" onclick="selectSession(this)">10:00 AM</div>
+      <div class="session" onclick="selectSession(this)">11:00 AM</div>
+      <div class="session" onclick="selectSession(this)">12:00 PM</div>
+      <div class="session" onclick="selectSession(this)">1:00 PM</div>
+      <div class="session" onclick="selectSession(this)">2:00 PM</div>
+      <div class="session" onclick="selectSession(this)">3:00 PM</div>
+      <div class="session" onclick="selectSession(this)">4:00 PM</div>
+      <div class="session" onclick="selectSession(this)">5:00 PM</div>
+      <div class="session" onclick="selectSession(this)">6:00 PM</div>
+      <div class="session" onclick="selectSession(this)">7:00 PM</div>
+    </div>
+
+    <p id="selectedTime"></p>
+    <button class="vr-btn">Join in VR</button>
+  </div>
+
+  <div class="breathing-exercise">
+    <h2>Guided Breathing Exercise</h2>
+    <p>Follow along to relax:</p>
+    <button onclick="startBreathing()">Start</button>
+    <p id="breathingInstructions"></p>
+  </div>
+
+  <script>
+    function showMessage(message) {
+      alert(message);
+    }
+
+    function selectSession(element) {
+      let sessions = document.querySelectorAll('.session');
+      sessions.forEach(session => session.classList.remove('selected'));
+      element.classList.add('selected');
+      document.getElementById('selectedTime').innerText = "Selected Session: " + element.innerText;
+      setTimeout(() => {
+        alert("Your session at " + element.innerText + " has been booked!");
+      }, 500);
+    }
+
+    function startBreathing() {
+      let instructions = document.getElementById('breathingInstructions');
+      instructions.innerText = "Inhale deeply... 🫁";
+      setTimeout(() => {
+        instructions.innerText = "Hold... 😌";
+      }, 4000);
+      setTimeout(() => {
+        instructions.innerText = "Exhale slowly... 🌬️";
+      }, 7000);
+      setTimeout(() => {
+        instructions.innerText = "Repeat for 3 cycles!";
+      }, 11000);
+    }
+
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark-mode");
+    }
+  </script>
+</body>
+</html>

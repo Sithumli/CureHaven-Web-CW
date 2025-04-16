@@ -7,6 +7,41 @@ table {
     margin: 0 auto; 
     background-color: #fff5;
 }
+.modal {
+    text-align: center; /* Centers text */
+    color: white; /* Makes text white */
+    background-color: rgba(0, 0, 0, 0.8); /* Dark background for contrast */
+    padding: 20px;
+    border-radius: 10px;
+    width: 60%;
+    max-width: 600px;
+    position: relative;
+    margin: auto;
+}
+
+.modal h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.modal p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.close-btn {
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.close-btn:hover {
+    background-color: darkred;
+}
 
 th, td {
     border: 1px solid #ffffff; 

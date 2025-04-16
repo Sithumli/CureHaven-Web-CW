@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@800&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="images/logo2.png">
     <link rel="stylesheet" href="css/home.css"> 
+    <link rel="stylesheet" href="css/feedback.css"> 
 </head>
 <body>
     <header>
@@ -30,6 +31,60 @@
             </nav>
         </div>
     </header>
+    <main>
+        <div class="form-container" id="feedbackForm">
+            <h1>Feedback Form</h1>
+            <form onsubmit="return validateForm()">
+                <label>1. Enter your name:</label>
+                <input type="text" id="name">
+                <span class="error" id="nameError"></span>
+        
+                <label>2. Enter your email:</label>
+                <input type="email" id="email">
+                <span class="error" id="emailError"></span>
+        
+                <label>3. Enter your age:</label>
+                <input type="number" id="age">
+                <span class="error" id="ageError"></span>
+        
+                <label>4. How often do you visit our website?</label>
+                <select id="frequency">
+                    <option>Daily</option>
+                    <option>Weekly</option>
+                    <option>Monthly</option>
+                    <option>Rarely</option>
+                </select>
+        
+                <label>5. How would you rate the quality of the content on our website?</label>
+                <div class="radio-container">
+                    <div class="radio-option">
+                        <input type="radio" name="quality" value="Excellent"> Excellent
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" name="quality" value="Good"> Good
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" name="quality" value="Average"> Average
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" name="quality" value="Poor"> Poor
+                    </div>
+                </div>
+                <span class="error" id="qualityError"></span>
+                
+        
+        
+                <label>6. Do you have any suggestions for improvement?</label>
+                <textarea id="suggestions"></textarea>
+        
+                <br><br>
+                <button type="reset">Reset</button>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        
+        <script src="script.js"></script>
+    </main>
     <footer>
         <div class="footer-box">
             <div class="footerlinks">

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CureHaven</title>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="content.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+
+
+        body{
+            background-image: url(images/background2.avif);
+        }
+
+
+        h1{
+            
+            font-family: "PT Serif", serif;
+            font-weight: 700;
+            font-style: bold;
+
+        }
+
+        h2{
+            font-family: "Roboto Slab", serif;
+        }
+
+
+        .sect1{
+            margin-left: 10px;
+            background-color: rgba(150, 136, 136, 0.494);
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+
+        .sect2{
+            background-color: rgba(150, 136, 136, 0.494);
+            margin-bottom: 20px;
+            border-radius: 10px;
+            margin-left: 10px;
+        }
+
+        .sect3{
+            background-color: rgba(150, 136, 136, 0.494) ;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            margin-left: 10px;
+        }
+
+        .sect4{
+            background-color: rgba(150, 136, 136, 0.494);
+            border-radius: 10px;
+            margin-bottom: 20px;
+            margin-left: 10px;
+        }
+
+        nav {
+            background: #333;
+            padding: 10px;
+            position: fixed;
+            right: 0;
+            top: 0;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        nav a {
+
+            font-style: oblique;
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        
+        section {
+            padding: 20px;
+            margin-right: 150px;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+            
+        }
+
+        section:hover{
+            transform: scale(1.02);
+           
+
+        }
+
+
+        .go-to-top {
+            position: fixed;
+            right: 120px;
+            bottom: 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            z-index: 1000;
+        }
+
+        .go-to-top:hover {
+            background-color: #555;
+        }
+
+
+        #top {
+            position: absolute;
+            top: 0;
+        }
+
+
+        .pics1
+        {   margin-bottom: 10px;
+            border-radius: 10px;
+            height: 150px;
+            margin-left: 5px;
+            width: 170px;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+        .pics{
+            border-radius: 10px;
+            height: 150px;
+            margin-left: 5px;
+            width: 170px;
+            object-fit: cover;
+            display: inline-block;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }   
+
+        .pics1:hover{
+            transform: scale(1.1);
+            opacity: 0.8;
+
+        }
+
+        .pics:hover{
+            transform: scale(1.1);
+            opacity: 0.8;
+    
+        }
+
+        .image-set1{
+            margin-bottom: 20px;
+
+        }
+
+        li{
+            font-family: "Merriweather", serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            font-variation-settings: "wdth" 100;
+        }
+
+        p{
+            font-family: "Roboto Slab", serif;
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+    <a id="top"></a>
+
+    <nav>
+        <a href="#section1" style="margin-bottom: 20px;">Section 1</a>
+        <a href="#section2" style="margin-bottom: 20px;">Section 2</a>
+        <a href="#section3" style="margin-bottom: 20px;">Section 3</a>
+        <a href="#section4" style="margin-bottom: 20px;">Section 4</a>
+    </nav>    
+    
+<h1 style="text-align: center;">Social Health</h1>
+
+
+    <section class="sect1" id="section1">
+        <h2>What is Social Health?</h2>
+        <img src="images/socialhealth1.jpg" class="pics1">
+        <p>Social health refers to the ability of individuals to form and maintain positive, meaningful relationships with others, and to interact effectively within their community or society. It involves the capacity to engage in healthy social behaviors, establish a support network, and participate in social activities that foster a sense of belonging. Good social health contributes to emotional well-being, reduces feelings of loneliness and isolation, and improves overall mental and physical health by promoting positive interactions and communication. It is essential for coping with stress, enhancing self-esteem, and building resilience in both personal and community contexts..</p>
+        <h2>Why is social Health Important</h2>
+            <ul style="list-style-type:disc; margin-left: 10px;" class="">
+                <section class="image-set1">
+                <img src="images/socialhealth2.jpg" class="pics">
+                <img src="images/socialhealth3.jpg" class="pics">
+                <img src="images/socialhealth4.jpg" class="pics">
+                <img src="images/socialhealth5.jpg" class="pics">
+                </section>
+                <li style="font-size: 18px;">Improves Mental Health</li>
+                <p class="brief"> Strong social connections reduce stress, anxiety, and depression.</p>
+                <li style="font-size: 18px;">Enhances Physical health</li>
+                <p class="brief"> Studies show that good social relationships can boost immunity and longevity.</p>
+                <li style="font-size: 18px;">Provides Emotional Support</li>
+                <p class="brief">Friends and family help us cope with challenges.</p>
+                <li style="font-size: 18px;">Encourages Personal Growth</li>
+                <p class="brief">Social interactions develop communication skills, empathy, and confidence.</p>
+              </ul>
+    </section>
+
+
+    <section class="sect2" id="section2">
+        <h2>Factors That Influence Social Health</h2>
+        <p>Social health refers to the ability to form meaningful relationships, interact positively with others, and maintain a support system. It affects our mental, emotional, and even physical well-being.</p>        
+            <ul style="list-style-type:disc; margin-left: 10px;" class="">
+                <section class="image-set1">
+                <img src="images/socialhealth6.jpg" class="pics">
+                <img src="images/socialhealth7.jpg" class="pics">
+                <img src="images/socialhealth8.jpg" class="pics">
+                <img src="images/socialhealth9.jpg" class="pics">
+                </section>
+
+                <li style="font-size: 18px;">Family and Upbringing</li>
+                <p class="brief"> The way we are raised influences how we build relationships.</p>
+                <li style="font-size: 18px;">Education and Environment</li>
+                <p class="brief"> Schools and workplaces shape our social interactions.                    .</p>
+                <li style="font-size: 18px;">Technology and Social-Media</li>
+                <p class="brief">Digital connections impact the way we communicate and socialize.</p>
+                <li style="font-size: 18px;">Mental and Emotional Well-being</li>
+                <p class="brief">Anxiety, depression, and stress affect social engagement..</p>
+                <li style="font-size: 18px;">Cultural and Social Norms</li>
+                <p> Different cultures have unique ways of interacting and forming relationships.</p>
+              </ul>
+    </section>
+
+
+    <section class="sect3" id="section3">
+        <h2>How to Improve Social Health</h2>
+            <ul style="list-style-type:disc; margin-left: 10px;" class="">
+                <section class="image-set1">
+                <img src="images/socialhealth10.jpg" class="pics">
+                <img src="images/socialhealth11.jpg" class="pics">
+                </section>
+                <li style="font-size: 15px; margin-bottom: 10px;">Step out of your comfort zone and initiate conversations.</li>
+                <li style="font-size: 15px; margin-bottom: 10px;">Make an effort to reconnect with old friends and build new relationships.</li>
+                <li style="font-size: 15px; margin-bottom: 10px;">Be open-minded and respectful of different perspectives.</li>
+                <li style="font-size: 15px; margin-bottom: 10px;">Practice gratitude and appreciation in your relationships.</li>
+              </ul>
+    </section>
+
+
+    
+    <section class="sect4" id="section4">
+        <h2>Tips to Maintain Good Social Health</h2>
+        <p>Good social health is vital for mental, emotional, and physical well-being. Strong relationships reduce stress, boost self-esteem, and provide emotional support. Social connections promote happiness, personal growth, and better communication skills. Maintaining social health helps prevent loneliness, enhances resilience, and improves overall quality of life, leading to a happier and more fulfilling existence.</p>
+            <ul style="list-style-type:disc; margin-left: 10px;" class="">
+                <section class="image-set1">
+                <img src="images/socialhealth12.jpg" class="pics">
+                <img src="images/socialhealth13.jpg" class="pics">
+                <img src="images/socialhealth14.jpg" class="pics">
+                <img src="images/socialhealth15.jpg" class="pics">
+                </section>
+                <li style="font-size: 18px;">Improves Mental Health</li>
+                <p class="brief"> Strong social connections reduce stress, anxiety, and depression.</p>
+                <li style="font-size: 18px;">Enhances Physical health</li>
+                <p class="brief"> Studies show that good social relationships can boost immunity and longevity.</p>
+                <li style="font-size: 18px;">Provides Emotional Support</li>
+                <p class="brief">Friends and family help us cope with challenges.</p>
+                <li style="font-size: 18px;">Encourages Personal Growth</li>
+                <p class="brief">Social interactions develop communication skills, empathy, and confidence.</p>
+              </ul>
+    </section>
+
+    <a href="#top" class="go-to-top">Go to Top</a>
+
+
+

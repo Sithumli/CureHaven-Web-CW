@@ -6,6 +6,22 @@ function toggleMenu() {
 }
 
 
+// Get all content divs
+const contentDivs = document.querySelectorAll('.contentsall > div');
+
+// Get all iframes
+const iframes = document.querySelectorAll('.iframe-container iframe');
+
+// Add click event listeners to each content div
+contentDivs.forEach((div, index) => {
+    div.addEventListener('click', () => {
+        // Get the iframe source from the data-iframe attribute
+        const iframeSrc = div.getAttribute('data-iframe');
+
+        // Update the corresponding iframe's src attribute
+        iframes[index].setAttribute('src', iframeSrc);
+    });
+});
 
 function openOverlay1() {
     document.getElementById("overlay1").style.display = "block";
