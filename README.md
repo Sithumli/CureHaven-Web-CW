@@ -1,1 +1,1 @@
-curehaven.vercel.app
+https://curehaven.vercel.app
